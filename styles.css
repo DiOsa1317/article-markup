@@ -1,8 +1,118 @@
-/* Тут пиши основные стили */
+.page_div {
+    width: 1600px;
+    padding: 30px 0 0 30px;
+    margin: 0 auto;
+}
 
+[main_header] {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: center;
+    line-height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[definition1],
+[definition2] {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    line-height: 22px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[h2_header_what_tr],
+[h2_header_what_lect_venv] {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    line-height: 39px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[definition3],
+[definition4],
+[code_explanation1],
+[code_explanation2],
+[code_explanation3] {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    line-height: 33px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[lect_env_img1] {
+    width: 700px;
+    height: 727px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[img2] {
+    width: 700px;
+    height: 923px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+    .page_div {
+        width: 100%;
+        padding: 20px;
+    }
+    [main_header],
+    [definition1],
+    [definition2],
+    [h2_header_what_tr],
+    [h2_header_what_lect_venv],
+    [definition3],
+    [definition4],
+    [code_explanation1],
+    [code_explanation2],
+    [code_explanation3] {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    [main_header] {
+        font-size: 32px;
+        height: auto;
+        line-height: 1.2;
+    }
+    [h2_header_what_tr],
+    [h2_header_what_lect_venv] {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    [definition3],
+    [definition4],
+    [code_explanation1],
+    [code_explanation2],
+    [code_explanation3] {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    [lect_env_img1],
+    [img2] {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
 }
